@@ -12,8 +12,8 @@ body {
     background-color: whitesmoke;
     overflow-x: hidden;
     scrollbar-width: none;
-    background: linear-gradient(to right bottom, white,rgba(255, 255, 255, 0.319)), url(../img/fundo.jpg);
-    background-repeat: repeat;
+    background: linear-gradient(to right bottom, white, rgba(255, 255, 255, 0.319)), url(../img/fundo.jpg);
+    background-repeat: no-repeat;
     background-size: 450px;
     background-attachment: fixed;
 }
@@ -37,7 +37,7 @@ header>section>img#logo {
     padding: 10px;
 }
 
-header>section>img#casanome{
+header>section>img#casanome {
     height: 65px;
     width: 500px;
     scale: 1;
@@ -121,7 +121,9 @@ div#titulo>p {
     color: gray;
 }
 
-#btn1,#btn2,#btn3{
+#btn1,
+#btn2,
+#btn3 {
     border: 1px solid lightgray;
     padding: 15px 45px 0px 45px;
     font-size: .75em;
@@ -131,11 +133,15 @@ div#titulo>p {
     box-shadow: 0px 0px 10px rgba(59, 59, 59, 0.227);
 }
 
-#btn1:hover,#btn2:hover,#btn3:hover{
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
     background-color: rgb(235, 235, 235);
 }
 
-#seta1,#seta2,#seta3{
+#seta1,
+#seta2,
+#seta3 {
     color: gray;
 }
 
@@ -181,14 +187,21 @@ article>div>span>span {
     opacity: 50%;
 }
 
-@keyframes surgindo{
-    from{opacity: .3;
-    scale:.8} 
-    to{opacity: 1;
-    scale: 1;}
-    
+@keyframes surgindo {
+    from {
+        opacity: .3;
+        scale: .8
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
 }
 
-#cursos1,#cursos2,#cursos3{
+#cursos1,
+#cursos2,
+#cursos3 {
     display: none;
 }
