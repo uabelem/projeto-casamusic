@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background-image: url(../img/funcocasanusic.png);
+    background-repeat: repeat;
+    background-size: 450px;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgb(29, 29, 29);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.389);
+    overflow: hidden;
+}
+
+header>section#topo {
+    background-color: black;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>section>img#logo {
+    width: 60px;
+    padding: 10px;
+}
+
+header>section>img#casanome{
+    height: 50px;
+    width: 500px;
+    margin-top: 5px;
+    scale: 1.5;
+    opacity: 7%;
+}
+
+header>section>button#menuHAM {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+menu {
+    margin: auto;
+    display: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    text-decoration: none;
+}
+
+menu>ul>li>a:hover {
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h1>em {
+    color: gray;
+}
+
+div#titulo {
+    padding: 20px;
+    font-size: .9em;
+    border-bottom: 1px solid lightgray;
+}
+
+div#titulo>p {
+    margin-top: 10px;
+}
+
+#exemplos {
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.exitem {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+}
+
+.exnum {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.extext {
+    font-size: 12px;
+    color: gray;
+}
+
+#btn1,#btn2,#btn3{
+    border: 1px solid lightgray;
+    padding: 15px 45px 0px 45px;
+    font-size: .75em;
+    cursor: pointer;
+    width: 400px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(59, 59, 59, 0.227);
+}
+
+#btn1:hover,#btn2:hover,#btn3:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+#seta1,#seta2,#seta3{
+    color: gray;
+}
+
+.curso {
+    background-color: white;
+    width: 80vw;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.453);
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: .8em;
+}
+
+.curso:hover {
+    scale: 1.05;
+    transition: 0.3s ease;
+}
+
+.curso>img {
+    width: 100%;
+}
+
+.curso>article {
+    padding: 10px;
+}
+
+.curso h2,
+p {
+    margin-bottom: 10px;
+}
+
+.curso>article>div {
+    border-top: 1px solid lightgray;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article>div>span>span {
+    vertical-align: middle;
+    opacity: 50%;
+}
+
+@keyframes surgindo{
+    from{opacity: .3;
+    scale:.8} 
+    to{opacity: 1;
+    scale: 1;}
+    
+}
+
+#cursos1,#cursos2,#cursos3{
+    display: none;
+}
